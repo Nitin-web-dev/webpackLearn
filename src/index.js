@@ -3,16 +3,19 @@ import generateJoke from "./generateJoke";
 import "./styles/main.scss"
 import laughing from  './assets/laughing.svg'
 
-let joke = generateJoke();
+ generateJoke();
 
-console.log(joke)
+
 
 
 // third party module
 let id = uuidv4();
 console.log('id: ', id);
 
-let jokeEl = document.getElementById('IMG');
+let imgEl = document.getElementById('IMG');
 
-jokeEl.setAttribute('src', laughing);
+imgEl.setAttribute('src', laughing);
 
+// joke get button 
+const jokebtn = document.getElementById('jokebtn');
+jokebtn.addEventListener('click', generateJoke)

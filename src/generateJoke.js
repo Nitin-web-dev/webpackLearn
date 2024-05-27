@@ -1,5 +1,17 @@
+import axios from 'axios';
+
+
+
 function generateJoke () {
-    return "i don't trust stair! they're always up to something1;"
+    const config = {
+        headers: {
+            Accept : 'application/json'
+        }
+    }
+
+    axios.get('https://icanhazdadjoke.com', config).then(res => {
+        document.getElementById('joke').innerText = res.data.joke;
+    })
 }
 
 export default generateJoke;
