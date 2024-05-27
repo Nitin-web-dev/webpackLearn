@@ -2,6 +2,23 @@
 /******/ 	"use strict";
 /******/ 	var __webpack_modules__ = ({
 
+/***/ "./src/generateJoke.js":
+/*!*****************************!*\
+  !*** ./src/generateJoke.js ***!
+  \*****************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function generateJoke() {
+  return "i don't trust stair! they're always up to something1;";
+}
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateJoke);
+
+/***/ }),
+
 /***/ "./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss":
 /*!***********************************************************************************************************!*\
   !*** ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/styles/main.scss ***!
@@ -702,24 +719,6 @@ function validate(uuid) {
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (validate);
 
-/***/ }),
-
-/***/ "./src/generateJoke.js":
-/*!*****************************!*\
-  !*** ./src/generateJoke.js ***!
-  \*****************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-__webpack_require__.r(__webpack_exports__);
-/* harmony export */ __webpack_require__.d(__webpack_exports__, {
-/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
-/* harmony export */ });
-function generateJoke () {
-    return "i don't trust stair! they're always up to something1;"
-}
-
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (generateJoke);
-
 /***/ })
 
 /******/ 	});
@@ -808,19 +807,14 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-let joke = (0,_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"])();
-
-console.log(joke)
-
+var joke = (0,_generateJoke__WEBPACK_IMPORTED_MODULE_0__["default"])();
+console.log(joke);
 
 // third party module
-let id = (0,uuid__WEBPACK_IMPORTED_MODULE_2__["default"])();
+var id = (0,uuid__WEBPACK_IMPORTED_MODULE_2__["default"])();
 console.log('id: ', id);
-
-
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=main.27e0f8830a3a68ebd817.js.map
+//# sourceMappingURL=main.d1b4609d856059b4b894.js.map
